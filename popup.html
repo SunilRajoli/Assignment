@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Enhancer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1>WhatsApp Enhancer</h1>
+        <div class="filter-section">
+            <h2>Filter Chats</h2>
+            <label><input type="radio" name="filter" value="all" checked> All</label>
+            <label><input type="radio" name="filter" value="unread"> Unread</label>
+            <label><input type="radio" name="filter" value="awaiting-reply"> Awaiting Reply</label>
+            <label><input type="radio" name="filter" value="needs-reply"> Needs Reply</label>
+        </div>
+        <div class="custom-filter-section">
+            <h2>Create Custom Filters</h2>
+            <input type="text" id="filter-name" placeholder="Filter Name">
+            <button id="create-filter-btn">Create Filter</button>
+        </div>
+        <div class="contact-notes-section">
+            <h2>Contact Notes</h2>
+            <textarea id="contact-notes" placeholder="Enter notes for selected contact"></textarea>
+            <button id="save-notes-btn">Save Notes</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
